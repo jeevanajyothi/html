@@ -1,0 +1,60 @@
+
+<html>
+<head>
+<title>Javascript</title>
+
+<script type="text/javascript">
+function add()
+{
+var a=parseInt(f1.t1.value); //form f1 and row t1
+var b=parseInt(f1.t2.value);
+var c=a+b;
+document.getElementById("sample").innerHTML="Addition:"+c; //to display the addition value in div tag with id as sample.
+}
+function sub()
+{
+var a=parseInt(f1.t1.value); //form f1 and row t1
+var b=parseInt(f1.t2.value);
+var c=a-b;
+document.getElementById("sample").innerHTML="Subtraction:&nbsp"+c; 
+}
+function mul()
+{
+var a=parseInt(f1.t1.value); //form f1 and row t1
+var b=parseInt(f1.t2.value);
+var c=a*b;
+document.getElementById("sample").innerHTML="Multiplication:"+c; 
+}
+function div()
+{
+var a=parseInt(f1.t1.value); //form f1 and row t1
+var b=parseInt(f1.t2.value);
+var c=a/b;
+document.getElementById("sample").innerHTML="Division:"+c; 
+}
+</script>
+</head>
+<body>
+<form name="f1">
+<table align="center">
+<tr>
+<td>Enter Number</td>
+<td><input type="text" name="t1" size="20"></td>
+</tr>
+<tr>
+<td>Enter Number</td>
+<td><input type="text" name="t2" size="20"></td>
+</tr>
+<tr>
+<td colspan=2 align="center">
+<input type="button" name="b1" value="Add" onclick="add();"></br></br>
+<input type="button" name="b1" value="Sub" onclick="sub();"></br></br>
+<input type="button" name="b1" value="mul" onclick="mul();"></br></br>
+<input type="button" name="b1" value="div" onclick="div();"></td></br>
+</tr>
+</table>
+</form>
+<div id="sample" style="text-align:center;font-size:30px;color:green;">
+</div>
+</body>
+</html>
